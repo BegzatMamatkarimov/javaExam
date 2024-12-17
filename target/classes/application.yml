@@ -1,0 +1,19 @@
+project:
+  poster: posters/
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/back
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+
+base:
+  url: "http://localhost:8080"
